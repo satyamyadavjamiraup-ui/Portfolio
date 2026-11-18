@@ -5,12 +5,7 @@
 ### Cloud & DevOps Engineer Portfolio | Interactive · Animated · Responsive
 
 
-" https://satyamyadavjamiraup-ui.github.io/Portfolio/ "
-
-[![Live Site](https://img.shields.io/badge/Live_Site-Visit-00A8E8?style=for-the-badge&logo=vercel&logoColor=white)](https://portfolio-frontend-woss.vercel.app/)
-[![GitHub](https://img.shields.io/badge/GitHub-Repo-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/NiteshVishwakarma219/portfolio-frontend)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/nitesh1vishwakarma)
-
+https://satyamyadavjamiraup-ui.github.io/Portfolio/
 </div>
 
 <br>
@@ -46,7 +41,7 @@ No build tooling, package manager, or bundler is required — it's static HTML/C
 ## 📂 Project Structure
 
 ```
-portfolio-frontend/
+portfolio/
 ├── index.html      # All page markup and sections
 ├── style.css        # All styling
 ├── script.js         # Typewriter effect, 3D globe, scroll interactions, nav toggle
@@ -72,8 +67,8 @@ portfolio-frontend/
 No dependencies to install — just open the file or serve it statically:
 
 ```bash
-git clone https://github.com/NiteshVishwakarma219/portfolio-frontend.git
-cd portfolio-frontend
+git clone https://github.com/satyamyadavjamiravp-ui/portfolio.git
+cd portfolio
 ```
 
 Then either open `index.html` directly in your browser, or serve it locally:
@@ -85,16 +80,9 @@ python3 -m http.server 8000
 
 ## 🌍 Deployment
 
-The site is deployed on **Vercel** and auto-updates from this repository:
+The site is deployed on **GitHub Pages** and auto-updates from this repository:
 
-🔗 **[portfolio-frontend-woss.vercel.app](https://portfolio-frontend-woss.vercel.app/)**
+🔗 **([https://portfolio-frontend-woss.vercel.app/](https://satyamyadavjamiraup-ui.github.io/Portfolio/))**
 
-## 📫 Contact
-
-<div align="center">
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-nitesh1vishwakarma-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/nitesh1vishwakarma)
-[![Email](https://img.shields.io/badge/Email-Contact_Me-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:niteshvishwakarma8574@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-NiteshVishwakarma219-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/NiteshVishwakarma219)
 
 </div>
