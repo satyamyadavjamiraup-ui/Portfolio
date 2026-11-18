@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satyam Yadav | Cloud Support, Operations & MIS Associate</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Three.js Library for 3D Globe & Canvas Backgrounds -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+    <!-- Subtle Background Canvas -->
+    <div id="canvas-container"></div>
+
+    <!-- Header & Navigation Bar -->
+    <header>
+        <a href="#home" class="logo"><i class="fa-solid fa-server"></i> <span>Satyam</span></a>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#architecture">Global Traffic</a>
+            <a href="#skills">Tech Stack</a>
+            <a href="#business">Business</a>
+            <a href="#certificates">Certificates</a>
+            <a href="#portfolio">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="menu-icon" id="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- Home / Hero Section -->
+    <section class="home" id="home">
+        <canvas id="hero-3d" aria-hidden="true"></canvas>
+        <div class="home-content">
+            <div class="status-chip"><i class="fa-solid fa-cloud-arrow-up"></i> Cloud · Support · Business Operations</div>
+            <h1>Satyam Yadav</h1>
+            <h3>Deploying as a <span class="typewriter-text" id="typewriter"></span><span class="cursor">|</span></h3>
+            <p class="hero-highlight-text">I build and secure AWS infrastructure with Terraform, harden Linux systems, and automate the operations in between — from IAM policy down to CloudWatch alerts. I also handle the business side: reports, procurement flow, support and sales operations.</p>
+
+            <div class="hero-stats">
+                <div class="hero-stat"><strong>3</strong><span>Enterprise projects</span></div>
+                <div class="hero-stat"><strong>15+</strong><span>AWS services</span></div>
+                <div class="hero-stat"><strong>Cloud · Security · Linux</strong><span>Core focus</span></div>
+            </div>
+
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/satyam-yadav-411a85408?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/satyamyadavjamiraup-ui" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+
+            <div class="hero-btns">
+                <a href="Satyam Yadav.pdf" target="_blank" class="btn"><i class="fa-solid fa-file-arrow-down"></i> Download CV</a>
+                <a href="#portfolio" class="btn secondary-btn"><i class="fa-solid fa-diagram-project"></i> View Projects</a>
+                <a href="#business" class="btn secondary-btn"><i class="fa-solid fa-briefcase"></i> Business Skills</a>
+            </div>
+        </div>
+
+        <!-- Photo with orbit ring + floating tech chips -->
+        <div class="home-img">
+            <div class="orbit-container">
+                <div class="orbit-ring"></div>
+                <div class="orbit-ring-2"></div>
+                <div class="img-box">
+                    <img src="Images/personal-photo.jpg" alt="Satyam Yadav">
+                </div>
+                <div class="tech-chip chip-aws"><i class="fa-brands fa-aws"></i> AWS</div>
+                <div class="tech-chip chip-terraform"><i class="fa-solid fa-diagram-project"></i> Terraform</div>
+                <div class="tech-chip chip-security"><i class="fa-solid fa-shield-halved"></i> Security</div>
+                <div class="tech-chip chip-linux"><i class="fa-brands fa-linux"></i> Linux</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <div class="orbit-container">
+                <div class="orbit-ring"></div>
+                <div class="orbit-ring-2"></div>
+                <div class="img-box about-glow-effect">
+                    <img src="Images/personal-photo.jpg" alt="About Satyam">
+                </div>
+            </div>
+        </div>
+        <div class="about-content reveal">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Cloud, support and operations associate who builds, tests and documents</h3>
+            <p><span class="highlight-lead">I build AWS infrastructure with Terraform, secure it, break it on purpose and write down what I learn.</span> I am a final-year BCA student (Cloud Computing & Security) and an immediate joiner, open to cloud support, technical support and business operations roles.</p>
+
+            <div class="about-tabs" role="tablist" aria-label="About me">
+                <button role="tab" class="about-tab" data-pane="do" aria-selected="false">What I do</button>
+                <button role="tab" class="about-tab" data-pane="work" aria-selected="false">How I work</button>
+                <button role="tab" class="about-tab" data-pane="next" aria-selected="false">Looking for</button>
+            </div>
+            <div class="about-pane" id="about-pane" aria-live="polite"></div>
+
+            <div class="about-btns">
+                <a href="#experience" class="btn">See Experience</a>
+                <a href="#contact" class="btn secondary-btn">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- GLOBAL TRAFFIC & INTERACTIVE 3D GLOBE SECTION -->
+
+    <section class="architecture-section" id="architecture">
+        <div class="heading">
+            <span class="eyebrow">Global telemetry & routing</span>
+            <h2>Global Traffic & Controller Server Flow</h2>
+        </div>
+        <p class="arch-intro-text">
+            Interactive control map tracking live traffic requests originating globally and traversing security layers down to the core Mumbai server controller (<code style="color:var(--main-color);">ap-south-1</code>):
+        </p>
+
+        <!-- Dynamic Vibrant Global Traffic Visual Dashboard -->
+        <div class="globe-dashboard-box">
+            <div class="globe-hud-overlay">
+                <div class="hud-item"><span>Controller Server Node</span><strong>AWS Mumbai (ap-south-1)</strong></div>
+                <div class="hud-item"><span>Active Global Traffic</span><strong id="live-requests">1,482 req/sec</strong></div>
+                <div class="hud-item"><span>Server Status</span><span class="pulse-badge"><span class="pulse-dot"></span> Online</span></div>
+            </div>
+
+            <!-- Bright Visual Traffic Lines Canvas Container -->
+            <div id="globe-container"></div>
+        </div>
+
+        <!-- 4-Layer Traffic Transition Breakdown -->
+        <div class="traffic-flow-container">
+            <div class="flow-step-box reveal">
+                <div class="step-icon-badge"><i class="fa-solid fa-globe"></i></div>
+                <h3>1. Anycast DNS & Edge</h3>
+                <p>Global client traffic lines resolve via Route 53 to the nearest Edge POP location worldwide.</p>
+                <div class="live-ping-tag"><span class="pulse-dot"></span> Route 53 Active</div>
+            </div>
+
+            <div class="flow-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+
+            <div class="flow-step-box security-box reveal">
+                <div class="step-icon-badge"><i class="fa-solid fa-shield-halved"></i></div>
+                <h3>2. WAF & DDoS Shield</h3>
+                <p>Incoming traffic lines pass through AWS WAF and CloudFront security filters to drop malicious payloads.</p>
+                <div class="security-tag"><i class="fa-solid fa-lock"></i> TLS Terminated</div>
+            </div>
+
+            <div class="flow-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+
+            <div class="flow-step-box reveal">
+                <div class="step-icon-badge"><i class="fa-solid fa-network-wired"></i></div>
+                <h3>3. Application Load Balancer</h3>
+                <p>Traffic lands in Mumbai (`ap-south-1`) VPC, distributed across multiple Availability Zones by ALBs.</p>
+                <div class="live-ping-tag success"><i class="fa-solid fa-check"></i> Multi-AZ Balanced</div>
+            </div>
+
+            <div class="flow-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+
+            <div class="flow-step-box reveal">
+                <div class="step-icon-badge"><i class="fa-solid fa-cubes"></i></div>
+                <h3>4. Controller Clusters</h3>
+                <p>Requests route to ECS, AKS, or Kubernetes worker nodes querying secure RDS and DynamoDB instances.</p>
+                <div class="live-ping-tag db"><i class="fa-solid fa-bolt"></i> Private Subnet Active</div>
+            </div>
+        </div>
+
+        <!-- Terminal Diagnostic Window -->
+        <div class="ops-terminal-wrapper reveal">
+            <div class="ops-header">
+                <h3><i class="fa-solid fa-terminal"></i> Controller Server Diagnostics Console</h3>
+                <div class="terminal-dots">
+                    <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                </div>
+            </div>
+            <div class="terminal-window">
+                <div class="terminal-line"><span class="t-prompt">$</span> terraform apply -auto-approve</div>
+                <div class="terminal-line t-output">aws_vpc.production_vpc: Creating... [id=vpc-081f84b]</div>
+                <div class="terminal-line t-output">aws_eks_cluster.mumbai_cluster: Provisioning controller in ap-south-1...</div>
+                <div class="terminal-line t-success">Apply complete! Resources: 14 added, 0 changed, 0 destroyed.</div>
+                <div class="terminal-line cursor-blink"><span class="t-prompt">$</span> kubectl get pods -n production --watch</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section with Score Bars -->
+    <section class="skills" id="skills">
+        <h2 class="heading">Technical <span>Skill Matrix</span></h2>
+        <p class="arch-intro-text">Quantified mastery across Cloud, Security, DevOps orchestration, and core systems/languages.</p>
+
+        <div class="skills-wrapper">
+            <!-- Column 1: Core Cloud & AWS -->
+            <div class="skill-column reveal" data-category="cloud">
+                <h3 class="title"><i class="fa-brands fa-aws"></i> AWS Cloud</h3>
+                <div class="skill-bar">
+                    <div class="info"><span>VPC, Route 53, S3 & RDS</span><span>94%</span></div>
+                    <div class="progress-line" style="--val: 94%;"><span></span></div>
+                </div>
+                <div class="skill-bar">
+                    <div class="info"><span>EC2, ALB & Auto Scaling</span><span>90%</span></div>
+                    <div class="progress-line" style="--val: 90%;"><span></span></div>
+                </div>
+                <div class="skill-bar">
+                    <div class="info"><span>ECS & CloudWatch Monitoring</span><span>88%</span></div>
+                    <div class="progress-line" style="--val: 88%;"><span></span></div>
+                </div>
+                <div class="skill-bar">
+                    <div class="info"><span>Terraform & CloudFormation</span><span>90%</span></div>
+                    <div class="progress-line" style="--val: 90%;"><span></span></div>
+                </div>
+            </div>
+
+            <!-- Column 2: Cloud Security -->
+            <div class="skill-column reveal" data-category="security">
+                <h3 class="title"><i class="fa-solid fa-shield-halved"></i> Cloud Security</h3>
+                <div class="skill-bar">
+                    <div class="info"><span>IAM & Least Privilege</span><span>91%</span></div>
+                    <div class="progress-line" style="--val: 91%;"><span></span></div>
+                </div>
+                <div class="skill-bar">
+                    <div class="info"><span>Security Groups & Network ACLs</span><span>89%</span></div>
+                    <div class="progress-line" style="--val: 89%;"><span></span></div>
+                </div>
+                <div class="skill-bar">
+                    <div class="info"><span>Security Monitoring & Logging</span><span>85%</span></div>
+                    <div class="progress-line" style="--val: 85%;"><span></span></div>
+                </div>
+                <div class="skill-bar">
+                    <div class="info"><span>Linux Hardening & SSH</span><span>90%</span></div>
+                    <div class="progress-line" style="--val: 90%;"><span></span></div>
+                </div>
+            </div>
+
+            <!-- Column 3: DevOps & Containers -->
+            <div class="skill-column reveal" data-category="cloud">
+                <h3 class="title"><i class="fa-solid fa-gears"></i> DevOps & Containers</h3>
+                <div class="skill-bar">
+                    <div class="info"><span>Docker & Containerization</span><span>92%</span></div>
+                    <div class="progress-line" style="--val: 92%;"><span></span></div>
+                </div>
+                <div class="skill-bar">
+                    <div class="info"><span>Kubernetes (kind labs)</span><span>84%</span></div>
+                    <div class="progress-line" style="--val: 84%;"><span></span></div>
+                </div>
+                <div class="skill-bar">
+                    <div class="info"><span>Jenkins & CI/CD Pipelines</span><span>87%</span></div>
+                    <div class="progress-line" style="--val: 87%;"><span></span></div>
+                </div>
+                <div class="skill-bar">
+                    <div class="info"><span>Ansible</span><span>82%</span></div>
+                    <div class="progress-line" style="--val: 82%;"><span></span></div>
+                </div>
+            </div>
+
+            <!-- Column 4: Linux, Git & Programming -->
+            <div class="skill-column reveal" data-category="ai">
+                <h3 class="title"><i class="fa-solid fa-code"></i> Linux & Programming</h3>
+                <div class="skill-bar">
+                    <div class="info"><span>Linux Server Admin</span><span>93%</span></div>
+                    <div class="progress-line" style="--val: 93%;"><span></span></div>
+                </div>
+                <div class="skill-bar">
+                    <div class="info"><span>Git & GitHub</span><span>95%</span></div>
+                    <div class="progress-line" style="--val: 95%;"><span></span></div>
+                </div>
+                <div class="skill-bar">
+                    <div class="info"><span>Python Automation & Boto3</span><span>80%</span></div>
+                    <div class="progress-line" style="--val: 80%;"><span></span></div>
+                </div>
+                <div class="skill-bar">
+                    <div class="info"><span>Bash Scripting</span><span>80%</span></div>
+                    <div class="progress-line" style="--val: 80%;"><span></span></div>
+                </div>
+                <div class="skill-bar">
+                    <div class="info"><span>SQL (queries, joins, reports)</span><span>70%</span></div>
+                    <div class="progress-line" style="--val: 70%;"><span></span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates & Documents Section -->
+
+    <!-- Business & Operations -->
+    <section class="business" id="business">
+        <h2 class="heading">Business <span>& Operations</span></h2>
+        <p class="arch-intro-text">Cloud is my base. I also work on reports, procurement flow, support and sales operations. Pick a role to see the skills I bring and the resume that fits it.</p>
+
+        <div class="biz-tabs" role="tablist" aria-label="Choose a role">
+            <button role="tab" class="biz-tab active" data-role="ops" aria-selected="true">Business Operations & MIS</button>
+            <button role="tab" class="biz-tab" data-role="support" aria-selected="false">Technical & Customer Support</button>
+            <button role="tab" class="biz-tab" data-role="cloud" aria-selected="false">Cloud & Infrastructure</button>
+        </div>
+
+        <div class="biz-panel" id="biz-panel" aria-live="polite"></div>
+
+        <div class="biz-grid">
+            <div class="biz-card tilt">
+                <h3>Procure-to-pay flow</h3>
+                <p class="biz-note">Click a step to see what happens in it.</p>
+                <div class="p2p-steps" id="p2p-steps"></div>
+                <div class="p2p-detail" id="p2p-detail"></div>
+            </div>
+
+            <div class="biz-card tilt">
+                <h3>Sales MIS view <span class="biz-badge">sample data</span></h3>
+                <label class="biz-note" for="mis-quarter">Quarter</label>
+                <select id="mis-quarter">
+                    <option value="Q1">Q1</option><option value="Q2">Q2</option><option value="Q3">Q3</option><option value="Q4">Q4</option>
+                </select>
+                <div class="mis-chart" id="mis-chart"></div>
+                <p class="mis-summary" id="mis-summary"></p>
+                <code class="mis-query" id="mis-query"></code>
+            </div>
+        </div>
+    </section>
+
+    <section class="certificates" id="certificates">
+        <h2 class="heading">Certificates <span>& Documents</span></h2>
+        <p class="arch-intro-text">Academic marksheets and course certificates. Hover to pause, click any item to open it full-size in a new tab.</p>
+
+        <div class="cert-marquee-wrap">
+            <div class="cert-marquee-track">
+
+                <!-- Set A -->
+                <a class="cert-card" href="Documents/png_output/10.pdf" target="_blank" rel="noopener">
+                    <div class="cert-thumb">
+                        <img src="Documents/png_output/10.pdf" alt="Class 10th Marksheet" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="cert-placeholder"><i class="fa-solid fa-file-image"></i><span>Add image</span></div>
+                    </div>
+                    <p class="cert-name">Class 10th Marksheet</p>
+                </a>
+
+
+                <a class="cert-card" href="Documents/png_output/Data Analysis.jpeg" target="_blank" rel="noopener">
+                    <div class="cert-thumb">
+                        <img src="Documents/png_output/Data Analysis.jpeg" alt="Data Analysis Certificate" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="cert-placeholder"><i class="fa-solid fa-file-image"></i><span>Add image</span></div>
+                    </div>
+                    <p class="cert-name">Data Analysis Certificate</p>
+                </a>
+
+                <a class="cert-card" href="Documents/png_output/Excel.jpeg" target="_blank" rel="noopener">
+                    <div class="cert-thumb">
+                        <img src="Documents/png_output/Excel.jpeg" alt="Excel Certificate" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="cert-placeholder"><i class="fa-solid fa-file-image"></i><span>Add image</span></div>
+                    </div>
+                    <p class="cert-name">Excel Certificate</p>
+                </a>
+
+
+                
+                <a class="cert-card" href="Documents/png_output/Data Science.jpeg" target="_blank" rel="noopener">
+                    <div class="cert-thumb">
+                        <img src="Documents/png_output/Data Science.jpeg" alt="Data Science Certificate" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="cert-placeholder"><i class="fa-solid fa-file-image"></i><span>Add image</span></div>
+                    </div>
+                    <p class="cert-name">Data Science</p>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Projects Section -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Featured <span>Repositories</span></h2>
+        <p class="arch-intro-text">Six projects pulled directly from my GitHub — spanning cloud infrastructure, cloud security, and AI-assisted cloud tooling.</p>
+
+        <div class="portfolio-container">
+
+             <!-- Project 4: Secure Multi-AZ AWS Infrastructure & Application Deployment -->
+            <div class="project-card reveal" data-category="ai">
+                <div class="card-glow"></div>
+                <div class="project-icon">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="24" cy="24" r="6" stroke="var(--accent-c)" stroke-width="2"/>
+                        <path d="M24 6V13M24 35V42M6 24H13M35 24H42M11 11L16 16M32 32L37 37M37 11L32 16M16 32L11 37" stroke="var(--accent-c)" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h4>Secure Multi-AZ AWS Infrastructure & Application Deployment</h4>
+                <p>Built a multi-AZ, 3-tier AWS environment using 10 AWS services (VPC, ALB, Auto Scaling, EC2, RDS, IAM, SSM, KMS, Secrets Manager, CloudTrail) with Terraform, hosting Dockerized apps and a private RDS PostgreSQL database.</p>
+                <div class="project-tags"><span>AWS</span><span>Infrastructure</span><span>DevOps</span></div>
+                <a href="https://github.com/satyamyadavjamiraup-ui" target="_blank" class="project-link">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+            
+            <!-- Project 1: Terraform Infra -->
+            <div class="project-card reveal" data-category="cloud">
+                <div class="card-glow"></div>
+                <span class="project-badge">Featured</span>
+                <div class="project-icon">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="6" y="30" width="36" height="8" rx="2" stroke="var(--accent-c)" stroke-width="2"/>
+                        <rect x="10" y="19" width="28" height="8" rx="2" stroke="var(--accent-c)" stroke-width="2"/>
+                        <rect x="14" y="8" width="20" height="8" rx="2" stroke="var(--accent-c)" stroke-width="2"/>
+                    </svg>
+                </div>
+                <h4>Enterprise AWS Terraform Infrastructure</h4>
+                <p>Production-style AWS environment provisioned entirely with Terraform: VPC, EC2 + Auto Scaling, ALB, RDS PostgreSQL, IAM, and CloudWatch monitoring.</p>
+                <div class="project-tags"><span>Terraform</span><span>AWS</span><span>IAM</span></div>
+                <a href="https://github.com/satyamyadavjamiraup-ui" target="_blank" class="project-link">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+
+            <!-- Project 2: Cloud Security Platform -->
+            <div class="project-card reveal" data-category="security">
+                <div class="card-glow"></div>
+                <span class="project-badge">Featured</span>
+                <div class="project-icon">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 6L38 12V22C38 32 32 39 24 42C16 39 10 32 10 22V12L24 6Z" stroke="var(--accent-c)" stroke-width="2" stroke-linejoin="round"/>
+                        <path d="M18 24L22 28L31 19" stroke="var(--accent-c)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h4>Enterprise AWS Cloud Security Platform</h4>
+                <p>Security-focused AWS platform covering IAM hardening, network security controls, security monitoring, and incident-oriented troubleshooting.</p>
+                <div class="project-tags"><span>IAM</span><span>Security Groups</span><span>Monitoring</span></div>
+                <a href="https://github.com/satyamyadavjamiraup-ui" target="_blank" class="project-link">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Education Journey with Timeline Travel Line -->
+    <section class="education" id="education">
+        <h2 class="heading">Academic <span>Journey</span></h2>
+        <p class="arch-intro-text">Academic milestones and educational qualifications.</p>
+
+        <div class="timeline-container">
+            <div class="timeline-line"></div>
+
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2024 – 2027</div>
+                <div class="timeline-content">
+                    <h3>Bachelor of Computer Applications (BCA)</h3>
+                    <h4>NIMS University</h4>
+                    <p>Current CGPA: <strong>7.70</strong></p>
+                    <p>Advanced coursework in cloud architectures and secure systems design.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2023 – 2024</div>
+                <div class="timeline-content">
+                    <h3>Class XII — CBSE Board</h3>
+                    <h4>Higher Secondary Education</h4>
+                    <p>Percentage: <strong>75%</strong></p>
+                    <p>Completed core studies focusing on mathematics and computer sciences.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2021 – 2022</div>
+                <div class="timeline-content">
+                    <h3>Class X — CBSE Board</h3>
+                    <h4>Secondary School Education</h4>
+                    <p>Percentage: <strong>70%</strong></p>
+                    <p>Established a strong academic foundation in analytical reasoning and problem-solving.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Get In <span>Touch</span></h2>
+        <p class="arch-intro-text">I am an immediate joiner and open to cloud support, technical support and business operations roles. Reach me on any of these.</p>
+
+        <div class="contact-cards">
+                <a href="mailto:niteshv8112@gmail.com" class="contact-card tilt">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Email</span>
+                    <strong>satyamyadavjamirau.p@gmail.com</strong>
+                </a>
+                <a href="https://www.linkedin.com/in/satyam-yadav-411a85408?utm_source=share_via&utm_content=profile&utm_medium=member_ios" class="contact-card tilt" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <span>LinkedIn</span>
+                    <strong>satyamyadav</strong>
+                </a>
+                <a href="https://github.com/satyamyadavjamiraup-ui" class="contact-card tilt" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub</span>
+                    <strong>satyamyadav</strong>
+                </a>
+                <a href="Satyam Yadav.pdf" class="contact-card tilt" target="_blank" rel="noopener">
+                    <i class="fa-solid fa-file-arrow-down"></i>
+                    <span>Resume</span>
+                    <strong>Download PDF</strong>
+                </a>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2026 Satyam Yadav | All Rights Reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
+    </footer>
+
+    <!-- ============ Portfolio Assistant Chatbot ============ -->
+    <div id="chatbot-widget">
+        <button id="chatbot-toggle" aria-label="Open portfolio assistant">
+            <i class="fa-solid fa-message" id="chat-icon-open"></i>
+            <i class="fa-solid fa-xmark" id="chat-icon-close"></i>
+            <span class="chat-ping"></span>
+        </button>
+
+        <div id="chatbot-window">
+            <div class="chatbot-header">
+                <div class="chatbot-header-info">
+                    <div class="chatbot-avatar"><i class="fa-solid fa-headset"></i></div>
+                    <div>
+                        <strong>Portfolio Assistant</strong>
+                        <span><span class="pulse-dot"></span> Online</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chatbot-messages" id="chatbot-messages"></div>
+
+            <div class="chatbot-quick-replies" id="chatbot-quick-replies">
+                <button data-q="skills">Skills</button>
+                <button data-q="projects">Projects</button>
+                <button data-q="contact">Contact</button>
+                <button data-q="resume">Resume</button>
+            </div>
+
+            <form id="chatbot-input-form">
+                <input type="text" id="chatbot-input" placeholder="Ask about my work..." autocomplete="off">
+                <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <div id="cursor-glow" aria-hidden="true"></div>
+</body>
+</html>
